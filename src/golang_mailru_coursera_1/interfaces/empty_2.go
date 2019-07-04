@@ -35,7 +35,7 @@ func Buy(in interface{}) {
 	var p Payer
 	var ok bool
 	if p, ok = in.(Payer); !ok {
-		fmt.Printf("%T не не является платежным средством\n\n", in)
+		fmt.Printf("%T не является платежным средством\n\n", in)
 		return
 	}
 
